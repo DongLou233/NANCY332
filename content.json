@@ -1,0 +1,83 @@
+{
+  "updatedAt": "2026-10-28T15:10:05.025Z",
+  "flows": [
+    {
+      "id": "create-project",
+      "name": "创建项目",
+      "domain": "localhost,127.0.0.1",
+      "url": "/dashboard",
+      "enabled": true,
+      "steps": [
+        {
+          "order": 1,
+          "action": "click",
+          "selector": "#new-project-btn",
+          "xpath": "//button[contains(.,\"新建\")]",
+          "text": "点击这里新建项目",
+          "position": "bottom",
+          "inputValue": "",
+          "trigger": "auto",
+          "optional": false,
+          "remark": ""
+        },
+        {
+          "order": 2,
+          "action": "input",
+          "selector": "#project-name",
+          "xpath": "//input[@placeholder=\"项目名称\"]",
+          "text": "输入项目名称",
+          "position": "right",
+          "inputValue": "",
+          "trigger": "auto",
+          "optional": false,
+          "remark": ""
+        },
+        {
+          "order": 3,
+          "action": "click",
+          "selector": "#save-btn",
+          "xpath": "//button[contains(.,\"保存\")]",
+          "text": "点击保存",
+          "position": "bottom",
+          "inputValue": "",
+          "trigger": "auto",
+          "optional": false,
+          "remark": ""
+        }
+      ]
+    },
+    {
+      "id": "export-report",
+      "name": "导出报表",
+      "domain": "localhost,127.0.0.1",
+      "url": "/reports",
+      "enabled": true,
+      "steps": [
+        {
+          "order": 1,
+          "action": "click",
+          "selector": "#export-btn",
+          "xpath": "//button[contains(.,\"导出\")]",
+          "text": "点击导出按钮",
+          "position": "bottom",
+          "inputValue": "",
+          "trigger": "auto",
+          "optional": false,
+          "remark": ""
+        },
+        {
+          "order": 2,
+          "action": "info",
+          "selector": "",
+          "xpath": "",
+          "text": "选择导出格式后点击确认",
+          "position": "top",
+          "inputValue": "",
+          "trigger": "auto",
+          "optional": true,
+          "remark": ""
+        }
+      ]
+    }
+  ]
+}
