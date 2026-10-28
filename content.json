@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T15:53:32.939Z",
+  "updatedAt": "2026-10-28T15:56:03.907Z",
   "flows": [
     {
       "domain": "",
@@ -45,6 +45,39 @@
         }
       ],
       "url": "https://www.workbuddy.cn/app/conversation/2092272684876357632"
+    },
+    {
+      "domain": "baidu.com",
+      "enabled": true,
+      "id": "baidu",
+      "name": "testbaidu",
+      "steps": [
+        {
+          "action": "input",
+          "inputValue": "",
+          "optional": false,
+          "order": 1,
+          "position": "bottom",
+          "remark": "",
+          "selector": "#chat-textarea",
+          "text": "输入搜索内容",
+          "trigger": "auto",
+          "xpath": "/html/body/div/div/div[2]/div/div/div/div/div/div[4]/div[1]/div[2]/textarea"
+        },
+        {
+          "action": "click",
+          "inputValue": "",
+          "optional": false,
+          "order": 2,
+          "position": "bottom",
+          "remark": "",
+          "selector": "#chat-submit-button",
+          "text": "点击查询",
+          "trigger": "auto",
+          "xpath": "/html/body/div/div[2]/div/div/div/div/div/div[4]/div[1]/div[3]/div[3]/button"
+        }
+      ],
+      "url": "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=workbuddy&fenlei=256&oq=github&rsv_pq=9d01f58a000fa7b8&rsv_t=de67oGXm6Rma3X46whTAPXHr1DPLvtNbL7zjGG9R1hT7i%2B8Q8rt27ETzEEU&rqlang=cn&rsv_enter=1&rsv_dl=tb_enter&rsv_btype=t&rsv_sug3=17&rsv_sug1=13&rsv_sug7=101"
     }
   ]
 }
