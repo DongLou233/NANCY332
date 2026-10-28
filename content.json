@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-28T15:38:23.796Z",
+  "updatedAt": "2026-10-28T15:53:32.939Z",
   "flows": [
     {
-      "id": "workbuddy-conversation",
-      "name": "创建对话",
-      "domain": "www.workbuddy.cn",
-      "url": "/app/conversation",
+      "domain": "",
       "enabled": true,
+      "id": "test",
+      "name": "test",
       "steps": [
         {
+          "action": "click",
+          "inputValue": "",
+          "optional": false,
           "order": 1,
-          "action": "click",
-          "selector": "",
-          "xpath": "",
-          "text": "点击「新建对话」按钮",
           "position": "bottom",
-          "inputValue": "",
+          "remark": "",
+          "selector": "div > div:nth-of-type(1) > div > div > div:nth-of-type(2) > div:nth-of-type(2) > button:nth-of-type(1) > span",
+          "text": "进入对话页 打开 workbuddy 首页，点击左侧\"新建对话\"按钮。",
           "trigger": "auto",
-          "optional": false,
-          "remark": "示例：选择器留空，用制作版插件拾取后替换"
+          "xpath": "/html/body/div[1]/div/div/div/div/div[1]/div/div/div[2]/div[2]/button[1]/span"
         },
         {
-          "order": 2,
           "action": "input",
-          "selector": "",
-          "xpath": "",
-          "text": "在输入框输入你的问题",
-          "position": "bottom",
           "inputValue": "",
-          "trigger": "auto",
           "optional": false,
-          "remark": ""
+          "order": 2,
+          "position": "bottom",
+          "remark": "",
+          "selector": "div > div > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(1)",
+          "text": "输入问题 在底部输入框里输入你想问的问题。",
+          "trigger": "auto",
+          "xpath": "/html/body/div/div[2]/div[1]/div/div/div/div/div/div/div[2]/div/div[1]"
         },
         {
-          "order": 3,
           "action": "click",
-          "selector": "",
-          "xpath": "",
-          "text": "点击「发送」按钮",
-          "position": "bottom",
           "inputValue": "",
-          "trigger": "auto",
           "optional": false,
-          "remark": ""
+          "order": 3,
+          "position": "bottom",
+          "remark": "",
+          "selector": "div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(2) > span > button > span > span > svg",
+          "text": "发送 点击右侧\"发送\"按钮，等待 AI 回复。",
+          "trigger": "auto",
+          "xpath": "/html/body/div/div/div/div/div[3]/div[2]/div[2]/span/button/span/span/svg"
         }
-      ]
+      ],
+      "url": "https://www.workbuddy.cn/app/conversation/2092272684876357632"
     }
   ]
 }
